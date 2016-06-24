@@ -60,7 +60,7 @@ a{
 	    padding: 0 0.5rem;
     }  
 }
-@media screen  and  (max-width: 320px){
+@media screen  and  (max-width: 375px){
     .panel img{
     	display: none;
     }
