@@ -5,10 +5,7 @@ body{
 @font-face {
 	font-family:yljFont;
 	src: url('../fonts/ylqjht-webfont.eot');/*ie*/
-	src: url('../fonts/ylqjht-webfont.woff') format('woff2'),;
-	     url('../fonts/ylqjht-webfont.woff') format('woff'),
-	     url('../fonts/ylqjht.ttf') format('truetype'),	     	     
-	     url('../fonts/ylqjht-webfont.svg') format('svg');     
+	src: url('../fonts/ylqjht.ttf') format('truetype');     	         
 }
 a{
 	color: #fff;
