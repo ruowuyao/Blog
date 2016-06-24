@@ -1,10 +1,162 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-	<meta charset="UTF-8" />
-	<title>程若媚的简历</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>pagePiling.js plugin - Callbacks</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="pagePiling.js plugin by Alvaro Trigo." />
+	<meta name="keywords"  content="pile,piling,piling.js,stack,pages,scrolling,stacking,touch,fullpile,scroll,plugin,jquery" />
+	<meta name="Resource-type" content="Document" />
+
+	<link rel="stylesheet" type="text/css" href="stylesheets/jquery.pagepiling.css" />
+	<link rel="stylesheet" type="text/css" href="stylesheets/index.css" />
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://libs.baidu.com/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://libs.baidu.com/jqueryui/1.8.22/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="javascripts/jquery.pagepiling.min.js"></script>
+	<script type="text/javascript">
+		var deleteLog = false;
+
+		$(document).ready(function() {
+	    	$('#pagepiling').pagepiling({
+	    		menu: '#menu',
+	    		anchors: ['page1', 'page2', 'page3','page4','page5'],
+			    sectionsColor: ['#D91A37', '#D91A37', '#D91A37', '#D91A37',"#D91A37"],
+			    navigation:{
+			    	textColor: '#000',
+                    bulletsColor: '#000',
+			    	position: 'right',
+			    	tooltips:["个人简历","工作经历","作品展示","技能清单","致谢"]
+			    },
+			    /*onLeave: function(index, nextIndex, direction){
+			    	if(deleteLog){
+			    		$('#callbacksDiv').html('');
+			    	}
+			    	$('#callbacksDiv').append('<p>onLeave - index:' + index + ' nextIndex:' + nextIndex + ' direction:' + direction + '</p>')
+			    },
+			    afterRender: function(){
+			    	$('#callbacksDiv').append('<p>afterRender</p>');
+			    },*/
+			    /*afterLoad: function(anchorLink, index){
+			    	$('#callbacksDiv').append('<p>afterLoad - anchorLink:' + anchorLink + " index:" + index + '</p>');
+
+			    	//section 2
+					if(index == 2){
+						//moving the image
+						$('#section2').find('.intro').delay(100).animate({
+							left: '0%'
+						}, 1500, 'easeOutExpo', function(){
+							$('#section2').find('p').first().fadeIn(700, function(){
+								$('#section2').find('p').last().fadeIn(600);
+							});
+						});
+
+
+					}*/
+
+					//section 3
+					/*if(anchorLink == 'page3'){
+						//section 3
+						$('#section3').find('.intro').delay(100).animate({
+								left: '0%'
+						}, 1500, 'easeOutExpo');
+					}*/
+
+					/*deleteLog = true;*/
+			    /*}*/
+			});
+	    });
+    </script>
+
+    <style>
+    /*#section2 .intro{
+    	left: -150%;
+		position: relative;
+    }
+    #section2 p{
+    	display: none;
+    }
+    #section3 .intro{
+    	left: 140%;
+		position: relative;
+    }*/
+    </style>
+
 </head>
 <body>
-	<h1>123</h1>
+
+	<!--<ul id="menu">
+		<li data-menuanchor="page1" class="active"><a href="#page1">Page 1</a></li>
+		<li data-menuanchor="page2"><a href="#page2">Page 2</a></li>
+		<li data-menuanchor="page3"><a href="#page3">Page 3</a></li>
+	</ul>-->
+
+	<!--<div style="position:fixed;top:50px;left:50px;color:white;z-index:999;" id="callbacksDiv"></div>-->
+
+	<div id="pagepiling">
+	    <div class="section" id="section1">
+	    	<img src="images/crm.png" alt="照片" />
+	    	<h1>个人简介</h1>
+			<p>姓名:程若媚</p>
+			<p>Tel: 18146615475</p>
+			<p>毕业时间: 2016/7</p>				
+			<p>专业:江西财经大学软件工程</p>
+			<p>Email:chengruomei@qq.com</p>		
+			<p>Github:http://github.com/ruowuyao</p>
+			<br />
+	    </div>
+	    <div class="section" id="section2">
+	    	<h1>工作经历</h1>
+	    	<div class="intro">	
+	    		<div class="panel" id="panel1">
+	    			<img src="images/njq.png" alt="南极圈logo" />
+	    			<h4>深圳南极圈文化有限公司（2016/3-至今）</h4>
+	    		    <p>负责公司官网H5页面开发：基于微信官方UI库WeUI设计网页界面,      
+	    		             并使用Jquery来开发事件等.为优化性能,图片采取雪碧图。并少量使用了webfont。</p>
+	    		</div>
+	    		<div class="panel" id="panel2">
+	    			<img src="images/msmk.svg" alt="msmklogo" />
+	    			<h4>深圳美思美科（2015/10-2016/1）</h4>
+	    		    <p>负责运营中心、供应商等PC平台：基于JavaScript UI库Webix开发出后台管理模块界面，主要用到datatable,datatree等组件以及对这些组件的事件处理，并通过Ajax与后台人员进行JSON格式数据的异步加载。
+                    	Repo: <a href="http://ruowuyao.github.io/Customer_plat" target="_blank">http://ruowuyao.github.io/Customer_plat</a></p>
+	    		</div>
+	    		
+	    	</div>
+	    </div>
+	    <div class="section" id="section3">
+	    	<div class="intro">
+	    		<h1>作品展示</h1>
+	    		<p>响应式布局网站: <a href="http://ruowuyao.github.io/response/">http://ruowuyao.github.io/response/</a></p>
+             <p>纯CSS3小黄人	: <a href="http://crms.ren/blog/minions/">http://crms.ren/blog/minions/</a></p>
+	    	</div>
+	    </div>
+	    <div class="section" id="section4">
+	    	<h1>技能清单</h1>
+	    	<div class="intro">	    		
+	    		<p>HTML5</p>
+	    		<p>CSS3</p>
+	    		<p>Javascript</p>
+	    		<p>Git</p>
+	    		<p>jQuery</p>
+	    		<p>bootstrap</p>
+	    	</div>
+	    </div>
+	    <div class="section" id="section5">
+	    	<div class="intro">
+	    		<h1>感谢您阅读我的简历!</h1>
+	    		<h2>-----程若媚</h2>
+	    		<!--<p>想要了解更多的了解我,请进入我的个人博客:http://crms.ren</p>-->
+	    	</div>
+	    </div>
+	</div>
 </body>
 </html>
