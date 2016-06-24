@@ -5,8 +5,8 @@ body{
 @font-face {
 	font-family:yljFont;
 	src: url('../fonts/ylqjht-webfont.eot');/*ie*/
-	src: url('../fonts/ylqjht-webfont.woff') format('woff'),
-	     url('../fonts/ylqjht.ttf') format('truetype'),
+	src: url('../fonts/ylqjht.ttf') format('truetype'),
+	     url('../fonts/ylqjht-webfont.woff') format('woff'),	     
 	     url('../fonts/ylqjht-webfont.svg') format('svg');
 	     
 }
