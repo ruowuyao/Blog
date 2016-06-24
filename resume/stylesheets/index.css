@@ -4,10 +4,10 @@ body{
 }
 @font-face {
 	font-family:yljFont;
-	src: url('./fonts/ylqjht.eot');/*ie*/
+	src: url('../fonts/ylqjht.eot');/*ie*/
 	src: url('../fonts/ylqjht.ttf') format('truetype'),
-	     url('./fonts/ylqjht.svg') format('svg'),
-	     url('./fonts/ylqjht.woff') format('woff');
+	     url('../fonts/ylqjht.svg') format('svg'),
+	     url('../fonts/ylqjht.woff') format('woff');
 }
 a{
 	color: #fff;
