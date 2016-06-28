@@ -22,20 +22,20 @@ header{
 	line-height: 18rem;
 	margin-bottom: 1rem;
 }
-div nav{
+div #nav{
 	position:absolute;
 	top: 1rem;
 	right: 0rem;
 }
-nav ul{
+#nav ul{
 	list-style: none;
 }
-nav ul li{
+#nav ul li{
 	color: #FF6400;
 	display: inline-block;
 	font-family: yozakura;	
 }
-nav ul li a{
+#nav ul li a{
 	text-decoration: none;
 	color: #FF9900;
 	padding: 0.5rem;
@@ -51,7 +51,6 @@ header>h1{
 	height: auto;
 }
 #wrap nav{
-	/*border: 1px solid #ccc;*/
     float: left;
     width: 20%;
     display: inline-block;
@@ -98,7 +97,6 @@ hr{
 	color: #fff;
 }
 #wrap aside{
-	border: 1px solid #ccc;
 	float: right;
 	width: 19%;
 	display: inline-block;
@@ -116,4 +114,13 @@ hr{
 }
 #sub{
 	width: 2rem;
+}
+#warp_tags{
+	clear: both;
+}
+#warp_tags ul{
+	text-decoration: none;
+}
+#warp_tags ul li{
+	
 }
