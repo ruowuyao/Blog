@@ -1,0 +1,119 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: "微软雅黑";
+	background-color: #FF9900;
+	color: #fff;
+}
+@font-face {
+	font-family:"yozakura";
+	src: url('../fonts/yozakura-regular-webfont.svg#yozakura-regularRegular') format('svg'),
+	     url('../fonts/yozakura-regular-webfont.eot'),	     
+	     url('../fonts/yozakura-regular-webfont.ttf') format('truetype'),
+	     url('../fonts/yozakura-regular-webfont.woff') format('woff');	   
+}
+header{
+	background-color: #333333;
+	width: 100%;
+	height: 18rem;
+	text-align: center;
+	line-height: 18rem;
+	margin-bottom: 1rem;
+}
+div nav{
+	position:absolute;
+	top: 1rem;
+	right: 0rem;
+}
+nav ul{
+	list-style: none;
+}
+nav ul li{
+	color: #FF6400;
+	display: inline-block;
+	font-family: yozakura;	
+}
+nav ul li a{
+	text-decoration: none;
+	color: #FF9900;
+	padding: 0.5rem;
+	font-size: 2rem;
+}
+header>h1{
+    color: #FF9900;
+    letter-spacing: 0.5rem;
+    font-size: 3rem;
+}
+#wrap{
+	max-width: 100%;
+	height: auto;
+}
+#wrap nav{
+	/*border: 1px solid #ccc;*/
+    float: left;
+    width: 20%;
+    display: inline-block;
+}
+#wrap section {	
+	width: 59%;
+	display: inline-block;	
+}
+#wrap section article{
+	padding:  0.3rem 0.3rem 2rem 0.3rem;
+	border: 1px solid transparent;
+	border-radius: 1rem;
+	background-color: rgba(255,255,255,0.3);
+    margin-bottom: 1rem;
+    position: relative;
+}
+#title{
+	font-size: 2rem;
+	color: #333333;
+}
+#arctile_infos{
+	color: rgba(51,51,51,0.7);
+}
+hr{
+	margin: 0.3rem 0;
+	border:1px dotted #036 ;
+}
+#btn{
+	position: absolute;
+	bottom: 0;
+	right: 1rem;
+	background-color: transparent;
+	border: 1px solid #333333;
+	border-radius: 0.4rem;
+	padding: 0.3rem;
+	margin: 0.3rem 0;
+	height: auto;
+	color: #333333 ;
+	text-decoration: none;
+}
+#btn:hover{
+	background-color: #FF0033;
+	border: 1px solid #FF0033;
+	color: #fff;
+}
+#wrap aside{
+	border: 1px solid #ccc;
+	float: right;
+	width: 19%;
+	display: inline-block;
+}
+.input-q{
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+	width:100%;
+	border:0.2rem solid #FF0033;
+	float:left;
+}
+#que{
+	width: 8rem;
+}
+#sub{
+	width: 2rem;
+}
