@@ -14,13 +14,7 @@ body{
 	     url('../fonts/yozakura-regular-webfont.ttf') format('truetype'),
 	     url('../fonts/yozakura-regular-webfont.woff') format('woff');	   
 }
-@font-face {
-	font-family:"singlemalta";
-	src: url('../fonts/singlemalta-webfont.svg#"singlemalta-regularRegular') format('svg'),
-	     url('../fonts/singlemalta-webfont.eot'),	     
-	     url('../fonts/singlemalta-webfont.ttf') format('truetype'),
-	     url('../fonts/singlemalta-webfont.woff') format('woff');	   
-}
+
 header{
 	background-color: #333333;
 	width: 100%;
@@ -40,13 +34,13 @@ div #nav{
 #nav ul li{
 	color: #FF6400;
 	display: inline-block;
-	font-family: yozakura;	
+	font-family: "yozakura";	
 }
 #nav ul li a{
 	text-decoration: none;
 	color: #FF9900;
 	padding: 0.5rem;
-	font-size: 2rem;
+	font-size: 1.5rem;
 }
 header>h1{
     color: #FF9900;
