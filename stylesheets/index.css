@@ -14,6 +14,13 @@ body{
 	     url('../fonts/yozakura-regular-webfont.ttf') format('truetype'),
 	     url('../fonts/yozakura-regular-webfont.woff') format('woff');	   
 }
+@font-face {
+	font-family:"singlemalta";
+	src: url('../fonts/singlemalta-webfont.svg#"singlemalta-regularRegular') format('svg'),
+	     url('../fonts/singlemalta-webfont.eot'),	     
+	     url('../fonts/singlemalta-webfont.ttf') format('truetype'),
+	     url('../fonts/singlemalta-webfont.woff') format('woff');	   
+}
 header{
 	background-color: #333333;
 	width: 100%;
@@ -100,27 +107,61 @@ hr{
 	float: right;
 	width: 19%;
 	display: inline-block;
+	text-align: center;
+}
+.search{
+	width: 100%;
+}
+#wrap_search{
+	padding: 0 10%;
 }
 .input-q{
 	box-sizing:border-box;
 	-moz-box-sizing:border-box; /* Firefox */
 	-webkit-box-sizing:border-box; /* Safari */
-	width:100%;
-	border:0.2rem solid #FF0033;
+	border:1px solid #333333;
+	/*border-radius: 4px;*/
+	line-height: 1.8rem;
 	float:left;
+	background-color: transparent;
+	outline: none;
 }
+#sub:hover{
+	border:1px solid #333333;
+	/*border-radius: 4px;*/
+	background-color: #333333!important;
+	background: url(../images/icon_search2.png) no-repeat ;
+	background-size: contain;
+	background-position: center;
+}
+::-webkit-input-placeholder{color:#fff;}
+::-moz-placeholder{color:#fff;}
+:-moz-placeholder{color:#fff;}
 #que{
-	width: 8rem;
+	width: 80%;
+	padding-left: 0.5rem;
 }
 #sub{
-	width: 2rem;
+	width: 20%;
+	background: url(../images/icon_search.png) no-repeat ;
+	background-size: contain;
+	background-position: center;
+	text-indent: -999rem;
 }
+
 #warp_tags{
 	clear: both;
 }
 #warp_tags ul{
+	list-style: none;
+	text-align: center;
+	margin-top: 4rem;
+}
+#warp_tags ul li a{
 	text-decoration: none;
+	color:#333333;
+	font-family: "yozakura";
+	/*font-family: "singlemalta";*/
+	font-size: 2rem;
 }
-#warp_tags ul li{
-	
-}
+
